@@ -8,6 +8,59 @@
     <title>Geng Sun, Jilin University</title>
 </head>
 
+<style>
+.news-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.additional-news {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* 初始隐藏 */
+}
+
+.news-toggle-container {
+    margin-top: 0px; /* 可以调整这个值以控制按钮和内容的间距 */
+}
+
+.expand-button {
+    cursor: pointer;
+    color: #1f82a9;
+    background: none;
+    border: none;
+    font-size: 18px;
+    text-decoration: underline;
+    display: block; /* 确保按钮占据一整行 */
+}
+
+.expand-button:hover {
+    color: #006699;
+}
+</style>
+
+
+<script>
+function toggleNews() {
+    var additionalNewsItems = document.querySelectorAll('.additional-news');
+    var button = document.querySelector('.expand-button');
+    
+    additionalNewsItems.forEach(function(item) {
+        if (item.style.display === 'none' || item.style.display === '') {
+            item.style.display = 'list-item'; // 显示隐藏内容
+            button.textContent = 'Collapse';
+        } else {
+            item.style.display = 'none'; // 隐藏内容
+            button.textContent = 'More';
+        }
+    });
+}
+
+</script>
+
+
 <body>
     <!--<table id="tbInformation" width="100%">-->
     <table id="tbInformation" width="100%">
@@ -28,9 +81,35 @@
     </table>
     <hr>
 
-    <h3><font size="" color="red">NEWS：</font></h3>
-    <ul>
+    <h3><font size="" color="red">NEWS:</font>
+   </h3>
+  <h4><font size="" color="blue">Activities:</font>
+   </h3>
+    <ul class="news-list" style="text-align: justify;text-justify:inter-ideograph;" >
 
+	<li><b><font size="" color="red">(07/2024)</font></b> We will give a tutorial <a href="https://globecom2024.ieee-globecom.org/", target="_blank">"Empowering Networks with GAI: Fundamentals, Methodologies, and Applications"</a> in IEEE Global Communications Conference (GLOBECOM 2024), welcome to participate!<br></li>    
+
+	<li><b><font size="" color="red">(04/2024)</font></b> We will organize a Special Issue <a href="https://ieee-iotj.org/wp-content/uploads/2024/04/Integration_Generative_AI.pdf", target="_blank">"Integration of Generative AI and Internet of Things "</a> in IEEE Internet of Things Journal, welcome to submit papers!<br></li>      
+
+	<li><b><font size="" color="red">(04/2024)</font></b> We will organize a workshop <a href="https://iccc2024.ieee-iccc.org/workshop/empowering-wireless-communications-and-networking-generative-ai", target="_blank">"Empowering Wireless Communications and Networking with Generative AI"</a> in IEEE/CIC International Conference on Communications in China (ICCC 2024), welcome to submit papers!<br></li>  
+
+      <li><b><font size="" color="red">(03/2024)</font></b> We will give a tutorial <a href="https://iccc2024.ieee-iccc.org/program/tutorials-0", target="_blank">"Generative Artificial Intelligence-empowered Networks: Optimization and Applications"</a> in IEEE/CIC International Conference on Communications in China (ICCC 2024), welcome to participate!<br></li>  
+
+
+    <h4><font size="" color="blue">Recent Accepted Papers:</font>
+   </h4>
+
+   <li><b><font size="" color="red">(07/2024)</font></b> Our four papers are accepted by IEEE GLOBECOM 2024!<br></li> 
+
+      <li><b><font size="" color="red">(07/2024)</font></b> Our paper "Decentralized Navigation with Heterogeneous Federated Reinforcement Learning for UAV-enabled Mobile Edge Computing" is accepted by IEEE Transactions on Mobile Computing (CCF-A)!<br></li>  
+
+      <li><b><font size="" color="red">(07/2024)</font></b> Our paper "Enhancing IoT (Internet of Things) Feature Selection: A Two-Stage Approach via an Improved Whale Optimization Algorithm" is accepted by Expert Systems With Applications (中科院1区)!<br></li>  
+
+      <li><b><font size="" color="red">(06/2024)</font></b> Our paper "UAV-enabled Collaborative Beamforming via Multi-Agent Deep Reinforcement Learning" is accepted by IEEE Transactions on Mobile Computing (CCF-A)!<br></li>  
+
+      <li><b><font size="" color="red">(05/2024)</font></b> Our paper "Reliable and Energy-efficient Communications via Collaborative Beamforming for UAV Networks" is accepted by IEEE Transactions on Wireless Communications (中科院1区)!<br></li>  
+
+</ul>
       <!--<li><b><font size="" color="red">2022年博士研究生名额已满，硕士研究生招生基本要求：</font></b>
         <ul>
           <li>具备自我驱动（self-motivated）能力，目标明确</li>
@@ -40,19 +119,12 @@
         </ul>
         所在实验室基本情况及其他导师简介，请点击：<a href="https://mp.weixin.qq.com/s/-Pvvi0kQr600o_A_fSGSiQ">移动通信与网络系统教研室</a><br>
        </li>-->
+    <div class="news-toggle-container"  style="text-align: justify;text-justify:inter-ideograph;">     
+<ul class="additional-news">
+      <li><b><font size="" color="red">(04/2024)</font></b> Our paper "An Accurate Beam Tracking Algorithm with Adaptive Beam Reconstruction via UAV-BSs for Mobile Users" is accepted by IEEE Transactions on Vehicular Technology!<br></li>  
 
-      <div style="text-align: justify;text-justify:inter-ideograph;">
+      <li><b><font size="" color="red">(03/2024)</font></b> Our paper "Efficient Traffic-based IoT Device Identification Using a Feature Selection Approach with Lévy Flight-based Sine Chaotic Sub-swarm Binary Honey Badger Algorithm" is accepted by Applied Soft Computing (中科院1区)!<br></li>  
 
-      <li><b><font size="" color="red">(05/2024)</font></b> Our paper "Reliable and Energy-efficient Communications via Collaborative Beamforming for UAV Networks" is accepted by IEEE Transactions on Wireless Communications!<br></li>  
-    
-      <li><b><font size="" color="red">(04/2024)</font></b> We will organize a Special Issue <a href="https://ieee-iotj.org/wp-content/uploads/2024/04/Integration_Generative_AI.pdf", target="_blank">"Integration of Generative AI and Internet of Things "</a> in IEEE Internet of Things Journal, welcome to submit papers!<br></li>  
-
-      <li><b><font size="" color="red">(04/2024)</font></b> We will organize a workshop <a href="https://iccc2024.ieee-iccc.org/program/workshops-0", target="_blank">"Empowering Wireless Communications and Networking with Generative AI"</a> in IEEE/CIC International Conference on Communications in China (ICCC 2024), welcome to submit papers!<br></li> 
-
-      <li><b><font size="" color="red">(03/2024)</font></b> We will give a tutorial <a href="https://iccc2024.ieee-iccc.org/program/tutorials-0", target="_blank">"Generative Artificial Intelligence-empowered Networks: Optimization and Applications"</a> in IEEE/CIC International Conference on Communications in China (ICCC 2024), welcome to participate!<br></li>     
-
-      <li><b><font size="" color="red">(03/2024)</font></b> Our paper "Efficient Traffic-based IoT Device Identification Using a Feature Selection Approach with Lévy Flight-based Sine Chaotic Sub-swarm Binary Honey Badger Algorithm" is accepted by Applied Soft Computing!<br></li>  
-    
       <li><b><font size="" color="red">(01/2024)</font></b> Our paper "Joint Task Offloading and Resource Allocation in Aerial-Terrestrial UAV Networks with Edge and Fog Computing for Post-Disaster Rescue" is accepted by IEEE Transactions on Mobile Computing (CCF-A)!<br></li>   
 
       <li><b><font size="" color="red">(01/2024)</font></b> Our paper "UAV Swarm-enabled Collaborative Secure Relay Communications with Time-domain Colluding Eavesdropper" is accepted by IEEE Transactions on Mobile Computing (CCF-A)!<br></li>   
@@ -63,9 +135,9 @@
 
       <li><b><font size="" color="red">(12/2023)</font></b> Our paper "Two-Way Aerial Secure Communications via Distributed Collaborative Beamforming under Eavesdropper Collusion" is accepted by IEEE INFOCOM 2024 (CCF-A)!<br></li>
 
-      <li><b><font size="" color="red">(09/2023)</font></b> Our paper "Resource Scheduling for UAVs-aided D2D Networks: A Multi-objective Optimization Approach" is accepted by IEEE Transactions on Wireless Communications!<br></li>
+      <li><b><font size="" color="red">(09/2023)</font></b> Our paper "Resource Scheduling for UAVs-aided D2D Networks: A Multi-objective Optimization Approach" is accepted by IEEE Transactions on Wireless Communications (中科院1区)!<br></li>
 
-      <li><b><font size="" color="red">(09/2023)</font></b> Our paper "Multi-objective Optimization Approach for Reducing Hovering and Motion Energy Consumptions in UAV-assisted Collaborative Beamforming" is accepted by IEEE Internet of Things Journal!<br></li>
+      <li><b><font size="" color="red">(09/2023)</font></b> Our paper "Multi-objective Optimization Approach for Reducing Hovering and Motion Energy Consumptions in UAV-assisted Collaborative Beamforming" is accepted by IEEE Internet of Things Journal (中科院1区)!<br></li>
 
       <li><b><font size="" color="red">(09/2023)</font></b> Our paper "Mitigating Poor Data Quality Impact with Federated Unlearning for Human-Centric Metaverse" is accepted by IEEE Journal on Selected Areas in Communications (CCF-A)!<br></li>
 
@@ -73,7 +145,7 @@
 
       <li><b><font size="" color="red">(06/2023)</font></b> Our paper "Multi-Objective Optimization for UAV Swarm-Assisted IoT with Virtual Antenna Arrays" is accepted by IEEE Transactions on Mobile Computing (CCF-A)!<br></li>
 
-      <li><b><font size="" color="red">(06/2023)</font></b> Our paper "Multi-objective Sparse Synthesis Optimization of Concentric Circular Antenna Array via Hybrid Evolutionary Computation Approach" is accepted by Expert Systems With Applications!<br></li>
+      <li><b><font size="" color="red">(06/2023)</font></b> Our paper "Multi-objective Sparse Synthesis Optimization of Concentric Circular Antenna Array via Hybrid Evolutionary Computation Approach" is accepted by Expert Systems With Applications (中科院1区)!<br></li>
 
       <li><b><font size="" color="red">(05/2023)</font></b> Our paper "Collaborative WSN-UAV Data Collection in Smart Agriculture: A Bi-objective Optimization Scheme" is accepted by ACM Transactions on Sensor Networks (CCF-B)!<br></li>
 
@@ -84,10 +156,9 @@
       <li><b><font size="" color="red">(01/2023)</font></b> Our paper "BARGAIN-MATCH: A Game Theoretical Approach for Resource Allocation and Task Offloading in Vehicular Edge Computing Networks" is accepted by IEEE Transactions on Mobile Computing (CCF-A)!<br></li>
 
       <li><b><font size="" color="red">(01/2023)</font></b> Our paper "Multi-Objective Optimization Approaches for Physical Layer Secure Communications Based on Collaborative Beamforming in UAV Networks" is accepted by IEEE/ACM Transactions on Networking (CCF-A)!<br></li>
-
-      </div>
     </ul>
-
+<button class="expand-button" onclick="toggleNews()">More</button>
+</div>
     
 
     <hr>
@@ -98,7 +169,7 @@
        
 		<b>Geng Sun</b> (S'17-M'18) received the B.S. degree in communication engineering from Dalian Polytechnic University, and the Ph.D. degree in computer science and technology from Jilin University, in 2011 and 2018, respectively. He was a Visiting Researcher with the School of Electrical and Computer Engineering, Georgia Institute of Technology, USA. He is an Associate Professor in the College of Computer Science and Technology at Jilin University, and also a Senior Research Scholar in the School of Computer Science and Engineering at Nanyang Technological University (Collaborative Supervisor: Prof. Dusit Niyato). His research interests include <u>UAV Communications and Networking, 6G Intelligent Reflecting Surface Communication, Mobile Edge Computing, Internet of Things (IoT) Collaborative Communication and Sensing, Generative Artificial Intelligence, Deep Reinforcement Learning, Evolutionary Learning, and Multi-objective Optimization</u>. <br> 
 <br> 
-		He published more than <b>100</b> papers including <u>IEEE/ACM ToN, IEEE JSAC, IEEE TWC, IEEE TMC, IEEE TCOM, IEEE TAP, IEEE IoT-J, IEEE TIM, IEEE COMST, IEEE WCM, IEEE CL, ACM TOSN, ACM TCPS, IEEE INFOCOM, IEEE GLOBECOM, IEEE ICC, and IEEE WCNC, which have received more than <b>1500</b> Google citations</u>.<br> 
+		He published more than <b>100</b> papers including <u>IEEE/ACM ToN, IEEE JSAC, IEEE TMC, IEEE TWC, IEEE TCOM, IEEE TAP, IEEE TAP, IEEE IoT-J, IEEE TIM, IEEE CMOST, IEEE WCM, IEEE CL, ACM TOSN, ACM TCPS, IEEE INFOCOM, IEEE GLOBECOM, IEEE ICC, and IEEE WCNC, which have received more than <b>1700</b> Google citations</u>.<br> 
        <div>
     </ul>
     
@@ -124,89 +195,94 @@
     <br>
     <div style="text-align: justify;text-justify:inter-ideograph;">
 
-           <p style="margin:5px">[1] Jiahui Li, <b><u>Geng Sun*</u></b>, Lingjie Duan, Qingqing Wu. Multi-Objective Optimization for UAV Swarm-Assisted IoT with Virtual Antenna Arrays, <i>IEEE Transactions on Mobile Computing</i>, 23(5): 4890-4907, 2024. </p>
+        <p style="margin:5px">[1] Saichao Liu, <b><u>Geng Sun*</u></b>, Jiahui Li*, Shuang Liang, Qingqing Wu, Pengfei Wang, Dusit Niyato. UAV-enabled Collaborative Beamforming via Multi-Agent Deep Reinforcement Learning, <i>IEEE Transactions on Mobile Computing</i>, 2024. </p>
 
-        <p style="margin:5px">[2] <b><u>Geng Sun</u></b>, Xiaoya Zheng, Zemin Sun*, Qingqing Wu*, Jiahui Li, Yanheng Liu, Victor C.M. Leung. UAV-enabled Secure Communications via Collaborative Beamforming with Imperfect Eavesdropper Information, <i>IEEE Transactions on Mobile Computing</i>, 23(4): 3291-3308, 2024.</p>
+        <p style="margin:5px">[2] Jiahui Li, <b><u>Geng Sun*</u></b>, Lingjie Duan, Qingqing Wu. Multi-Objective Optimization for UAV Swarm-Assisted IoT with Virtual Antenna Arrays, <i>IEEE Transactions on Mobile Computing</i>, 23(5): 4890-4907, 2024. </p>
 
-        <p style="margin:5px">[3] Zemin Sun, <b><u>Geng Sun*</u></b>, Yanheng Liu, Jian Wang, Dongpu Cao. BARGAIN-MATCH: A Game Theoretical Approach for Resource Allocation and Task Offloading in Vehicular Edge Computing Networks, <i>IEEE Transactions on Mobile Computing</i>, 23(2): 1655-1673, 2024. </p>
+        <p style="margin:5px">[3] <b><u>Geng Sun</u></b>, Xiaoya Zheng, Zemin Sun*, Qingqing Wu*, Jiahui Li, Yanheng Liu, Victor C.M. Leung. UAV-enabled Secure Communications via Collaborative Beamforming with Imperfect Eavesdropper Information, <i>IEEE Transactions on Mobile Computing</i>, 23(4): 3291-3308, 2024. </p>
 
-        <p style="margin:5px">[4] <b><u>Geng Sun</u></b>, Long He, Zemin Sun*, Qingqing Wu, Shuang Liang*, Jiahui Li, Dusit Niyato, Victor C.M. Leung. Joint Task Offloading and Resource Allocation in Aerial-Terrestrial UAV Networks with Edge and Fog Computing for Post-Disaster Rescue, <i>IEEE Transactions on Mobile Computing</i>, 2024. </p>
+        <p style="margin:5px">[4] Zemin Sun, <b><u>Geng Sun*</u></b>, Yanheng Liu, Jian Wang, Dongpu Cao. BARGAIN-MATCH: A Game Theoretical Approach for Resource Allocation and Task Offloading in Vehicular Edge Computing Networks, <i>IEEE Transactions on Mobile Computing</i>, 23(2): 1655-1673, 2024. </p>
 
-        <p style="margin:5px">[5] Chuang Zhang, <b><u>Geng Sun*</u></b>, Qingqing Wu, Jiahui Li, Shuang Liang, Dusit Niyato, Victor C.M. Leung. UAV Swarm-enabled Collaborative Secure Relay Communications with Time-domain Colluding Eavesdropper, <i>IEEE Transactions on Mobile Computing</i>, 2024. </p>
+        <p style="margin:5px">[5] <b><u>Geng Sun</u></b>, Long He, Zemin Sun*, Qingqing Wu, Shuang Liang*, Jiahui Li, Dusit Niyato, Victor C.M. Leung. Joint Task Offloading and Resource Allocation in Aerial-Terrestrial UAV Networks with Edge and Fog Computing for Post-Disaster Rescue, <i>IEEE Transactions on Mobile Computing</i>, 2024. </p>
 
-        <p style="margin:5px">[6] Jiahui Li, <b><u>Geng Sun*</u></b>, Hui Kang, Aimin Wang, Shuang Liang, Yanheng Liu, Ying Zhang. Multi-Objective Optimization Approaches for Physical Layer Secure Communications Based on Collaborative Beamforming in UAV Networks, <i>IEEE/ACM Transactions on Networking</i>, 2023.</p>
+        <p style="margin:5px">[6] Chuang Zhang, <b><u>Geng Sun*</u></b>, Qingqing Wu, Jiahui Li, Shuang Liang, Dusit Niyato, Victor C.M. Leung. UAV Swarm-enabled Collaborative Secure Relay Communications with Time-domain Colluding Eavesdropper, <i>IEEE Transactions on Mobile Computing</i>, 2024. </p>
 
-        <p style="margin:5px">[7] <b><u>Geng Sun</u></b>, Jiahui Li, Yanheng Liu, Shuang Liang*, Hui Kang*. Time and Energy Minimization Communications Based on Collaborative Beamforming for UAV Networks: A Multi-objective Optimization Method, <i>IEEE Journal on Selected Areas in Communications</i>, 39(11): 3555-3572, 2021. </p>
+        <p style="margin:5px">[7] Pengfei Wang, Hao Yang, Guangjie Han, Ruiyun Yu, Leyou Yang, <b><u>Geng Sun</u></b>, Heng Qi, Xiaopeng Wei, Qiang Zhang. Decentralized Navigation with Heterogeneous Federated Reinforcement Learning for UAV-enabled Mobile Edge Computin, <i>IEEE Transactions on Mobile Computing</i>, 2024. </p>
 
-        <p style="margin:5px">[8] Pengfei Wang, Zongzheng Wei, Heng Qi*, Shaohua Wan, Yunming Xiao, <b><u>Geng Sun*</u></b>, Qiang Zhang*. Mitigating Poor Data Quality Impact with Federated Unlearning for Human-Centric Metaverse, <i>IEEE Journal on Selected Areas in Communications</i>, 42(4): 832-849, 2024.</p>
+        <p style="margin:5px">[8] Jiahui Li, <b><u>Geng Sun*</u></b>, Hui Kang, Aimin Wang, Shuang Liang, Yanheng Liu, Ying Zhang. Multi-Objective Optimization Approaches for Physical Layer Secure Communications Based on Collaborative Beamforming in UAV Networks, <i>IEEE/ACM Transactions on Networking</i>, 2023. </p>
 
-        <p style="margin:5px">[9] <b><u>Geng Sun</u></b>, Yanheng Liu*, Zhaoyu Chen, Aimin Wang, Ying Zhang*, Daxin Tian, Victor C.M. Leung. Energy Efficient Collaborative Beamforming for Reducing Sidelobe in Wireless Sensor Networks, <i>IEEE Transactions on Mobile Computing</i>,
+        <p style="margin:5px">[9] <b><u>Geng Sun</u></b>, Jiahui Li, Yanheng Liu, Shuang Liang*, Hui Kang*. Time and Energy Minimization Communications Based on Collaborative Beamforming for UAV Networks: A Multi-objective Optimization Method, <i>IEEE Journal on Selected Areas in Communications</i>, 39(11): 3555-3572, 2021. </p>
+
+        <p style="margin:5px">[10] Pengfei Wang, Zongzheng Wei, Heng Qi*, Shaohua Wan, Yunming Xiao, <b><u>Geng Sun*</u></b>, Qiang Zhang*. Mitigating Poor Data Quality Impact with Federated Unlearning for Human-Centric Metaverse, <i>IEEE Journal on Selected Areas in Communications</i>, 42(4): 832-849, 2024. </p>
+
+        <p style="margin:5px">[11] <b><u>Geng Sun</u></b>, Yanheng Liu*, Zhaoyu Chen, Aimin Wang, Ying Zhang*, Daxin Tian, Victor C.M. Leung. Energy Efficient Collaborative Beamforming for Reducing Sidelobe in Wireless Sensor Networks, <i>IEEE Transactions on Mobile Computing</i>,
             20(3): 965-982, 2021. </p>
 
-        <p style="margin:5px">[10] Xiaoya Zheng, <b><u>Geng Sun*</u></b>, Jiahui Li*, Shuang Liang, Qingqing Wu, Minghao Yin, Dusit Niyato, Victor C. M. Leung. Reliable and Energy-efficient Communications via Collaborative Beamforming for UAV Networks, <i>IEEE Transactions on Wireless Communications</i>, 2024.  </p>
+        <p style="margin:5px">[12] Xiaoya Zheng, <b><u>Geng Sun*</u></b>, Jiahui Li*, Shuang Liang, Qingqing Wu, Minghao Yin, Dusit Niyato, Victor C. M. Leung. Reliable and Energy-efficient Communications via Collaborative Beamforming for UAV Networks, <i>IEEE Transactions on Wireless Communications</i>, 2024. 
+        <p style="margin:5px">[13] Hongyang Pan, Yanheng Liu, <b><u>Geng Sun*</u></b>, Pengfei Wang, Chau Yuen. Resource Scheduling for UAVs-aided D2D Networks: A Multi-objective Optimization Approach, <i>IEEE Transactions on Wireless Communications</i>, 2023. </p>
 
-        <p style="margin:5px">[11] Hongyang Pan, Yanheng Liu, <b><u>Geng Sun*</u></b>, Pengfei Wang, Chau Yuen. Resource Scheduling for UAVs-aided D2D Networks: A Multi-objective Optimization Approach, <i>IEEE Transactions on Wireless Communications</i>, 2023. </p>
+        <p style="margin:5px">[14] Hongyang Pan, Yanheng Liu, <b><u>Geng Sun*</u></b>, Junsong Fan, Shuang Liang, Chau Yuen. Joint Power and 3D Trajectory Optimization for UAV-Enabled Wireless Powered Communication Networks With Obstacles, <i>IEEE Transactions on Communications</i>, 71(4), 2364-2380, 2023. </p>
 
-        <p style="margin:5px">[12] Hongyang Pan, Yanheng Liu, <b><u>Geng Sun*</u></b>, Junsong Fan, Shuang Liang, Chau Yuen. Joint Power and 3D Trajectory Optimization for UAV-Enabled Wireless Powered Communication Networks With Obstacles, <i>IEEE Transactions on Communications</i>, 71(4), 2364-2380, 2023. </p>
+        <p style="margin:5px">[15] <b><u>Geng Sun</u></b>, Jiahui Li, Aimin Wang*, Qingqing Wu*, Zemin Sun, Yanheng Liu. Secure and Energy-Efficient UAV Relay Communications Exploiting Collaborative Beamforming, <i>IEEE Transactions on Communications</i>, 70(8), 5401-5416, 2022. </p>
 
-        <p style="margin:5px">[13] <b><u>Geng Sun</u></b>, Jiahui Li, Aimin Wang*, Qingqing Wu*, Zemin Sun, Yanheng Liu. Secure and Energy-Efficient UAV Relay Communications Exploiting Collaborative Beamforming, <i>IEEE Transactions on Communications</i>, 70(8), 5401-5416, 2022. </p>
+        <p style="margin:5px">[16] <b><u>Geng Sun</u></b>, Jiahui Li, Aimin Wang*, Qingqing Wu, Zemin Sun, Yanheng Liu, Shuang Liang. Collaborative Beamforming for UAV Networks Exploiting Swarm Intelligence, <i>IEEE Wireless Communications</i>, 29(4): 10-17, 2022. </p>  
 
-        <p style="margin:5px">[14] <b><u>Geng Sun</u></b>, Jiahui Li, Aimin Wang*, Qingqing Wu, Zemin Sun, Yanheng Liu, Shuang Liang. Collaborative Beamforming for UAV Networks Exploiting Swarm Intelligence, <i>IEEE Wireless Communications</i>, 29(4): 10-17, 2022.</p>  
+        <p style="margin:5px">[17] Zemin Sun, Yanheng Liu*, Jian Wang, Guofa Li, Carie Anil, Keqiang Li, Xinyu Guo, <b><u>Geng Sun*</u></b>, Daxin Tian*, Dongpu, Cao. Applications of Game Theory in Vehicular Networks: A Survey, <i>IEEE Communications Surveys and Tutorials</i>, 23(4): 2660-2710, 2021. </p>
 
-        <p style="margin:5px">[15] Zemin Sun, Yanheng Liu*, Jian Wang, Guofa Li, Carie Anil, Keqiang Li, Xinyu Guo, <b><u>Geng Sun*</u></b>, Daxin Tian*, Dongpu, Cao. Applications of Game Theory in Vehicular Networks: A Survey, <i>IEEE Communications Surveys and Tutorials</i>, 23(4): 2660-2710, 2021. </p>
-
-        <p style="margin:5px">[16] <b><u>Geng Sun</u></b>, Yanheng Liu, Zhaoyu Chen, Shuang Liang, Aimin Wang*, Ying Zhang*. Radiation Beam Pattern Synthesis of Concentric Circular Antenna Arrays Using Hybrid Approach Based on Cuckoo Search, <i>IEEE Transactions on Antennas and Propagation</i>,
+        <p style="margin:5px">[18] <b><u>Geng Sun</u></b>, Yanheng Liu, Zhaoyu Chen, Shuang Liang, Aimin Wang*, Ying Zhang*. Radiation Beam Pattern Synthesis of Concentric Circular Antenna Arrays Using Hybrid Approach Based on Cuckoo Search, <i>IEEE Transactions on Antennas and Propagation</i>,
             66(9): 4563-4576, 2018. </p>
 
-        <p style="margin:5px">[17] Jing Zhang, Sheng Gao, Xin Feng, Hongwei Yang, <b><u>Geng Sun*</u></b>. An Accurate Beam Tracking Algorithm with Adaptive Beam Reconstruction via UAV-BSs for Mobile Users, <i>IEEE Transactions on Vehicular Technology</i>,
-            2024.</p>
+        <p style="margin:5px">[19] Jing Zhang, Sheng Gao, Xin Feng, Hongwei Yang, <b><u>Geng Sun*</u></b>. An Accurate Beam Tracking Algorithm with Adaptive Beam Reconstruction via UAV-BSs for Mobile Users, <i>IEEE Transactions on Vehicular Technology</i>,
+            2024. </p>
 
-        <p style="margin:5px">[18] Wenyu Yu, Hui Kang, <b><u>Geng Sun*</u></b>, Shuang Liang, Jiahui Li. Bio-inspired Feature Selection in Brain Disease Detection via An Improved Sparrow Search Algorithm, <i>IEEE Transactions on Instrumentation & Measurement</i>, 72, 2500515, 2023.</p>
+        <p style="margin:5px">[20] Wenyu Yu, Hui Kang, <b><u>Geng Sun*</u></b>, Shuang Liang, Jiahui Li. Bio-inspired Feature Selection in Brain Disease Detection via An Improved Sparrow Search Algorithm, <i>IEEE Transactions on Instrumentation & Measurement</i>, 72, 2500515, 2023. </p>
 
-        <p style="margin:5px">[19] <b><u>Geng Sun</u></b>, Xiaoya Zheng, Jiahui Li, Hui Kang*, Shuang Liang. Collaborative WSN-UAV Data Collection in Smart Agriculture: A Bi-objective Optimization Scheme, <i>ACM Transactions on Sensor Networks</i>, 2023.</p>
+        <p style="margin:5px">[21] <b><u>Geng Sun</u></b>, Xiaoya Zheng, Jiahui Li, Hui Kang*, Shuang Liang. Collaborative WSN-UAV Data Collection in Smart Agriculture: A Bi-objective Optimization Scheme, <i>ACM Transactions on Sensor Networks</i>, 2023. </p>
 
-        <p style="margin:5px">[20] Shuang Liang, Minghao Yin, <b><u>Geng Sun*</u></b>, Jiahui Li*. Multi-objective Optimization Approach for Reducing Hovering and Motion Energy Consumptions in UAV-assisted Collaborative Beamforming, <i>IEEE Internet of Things Journal</i>, 2023.</p>
+        <p style="margin:5px">[22] Shuang Liang, Minghao Yin, <b><u>Geng Sun*</u></b>, Jiahui Li*. Multi-objective Optimization Approach for Reducing Hovering and Motion Energy Consumptions in UAV-assisted Collaborative Beamforming, <i>IEEE Internet of Things Journal</i>, 2023. </p>
 
-        <p style="margin:5px">[21] Lingling Liu, Aimin Wang, <b><u>Geng Sun*</u></b>, Jiahui Li. Multi-objective Optimization for Improving Throughput and Energy Efficiency in UAV-enabled IoT, <i>IEEE Internet of Things Journal</i>, 9(20), 20763-20777, 2022.</p>
+        <p style="margin:5px">[23] Lingling Liu, Aimin Wang, <b><u>Geng Sun*</u></b>, Jiahui Li. Multi-objective Optimization for Improving Throughput and Energy Efficiency in UAV-enabled IoT, <i>IEEE Internet of Things Journal</i>, 9(20), 20763-20777, 2022. </p>
 
-        <p style="margin:5px">[22] Yanheng Liu, Hongyang Pan, <b><u>Geng Sun*</u></b>, Aimin Wang, Jiahui Li, Shuang Liang. Joint Scheduling and Trajectory Optimization of Charging UAV in Wireless Rechargeable Sensor Networks, <i>IEEE Internet of Things Journal</i>, 9(14), 11796-11813, 2022.</p>
+        <p style="margin:5px">[24] Yanheng Liu, Hongyang Pan, <b><u>Geng Sun*</u></b>, Aimin Wang, Jiahui Li, Shuang Liang. Joint Scheduling and Trajectory Optimization of Charging UAV in Wireless Rechargeable Sensor Networks, <i>IEEE Internet of Things Journal</i>, 9(14), 11796-11813, 2022. </p>
 
-        <p style="margin:5px">[23] <b><u>Geng Sun</u></b>, Xiaohui Zhao, Guojun Shen, Yanheng Liu*, Aimin Wang, Suhanya Jayaprakasam, Ying Zhang, Victor C.M. Leung. Improving Performance of Distributed Collaborative Beamforming in Mobile Wireless Sensor Networks: A Multi-objective Optimization Method, <i>IEEE Internet of Things Journal</i>, 7(8): 6787-6801, 2020. </p>
+        <p style="margin:5px">[25] <b><u>Geng Sun</u></b>, Xiaohui Zhao, Guojun Shen, Yanheng Liu*, Aimin Wang, Suhanya Jayaprakasam, Ying Zhang, Victor C.M. Leung. Improving Performance of Distributed Collaborative Beamforming in Mobile Wireless Sensor Networks: A Multi-objective Optimization Method, <i>IEEE Internet of Things Journal</i>, 7(8): 6787-6801, 2020. </p>
 
-        <p style="margin:5px">[24] Qianao Ju, <b><u>Geng Sun</u></b>, Hongsheng Li, Ying Zhang. Collaborative in-network processing for internet of battery-less things, <i>IEEE Internet of Things Journal</i>, 6(3): 5184-5195, 2019. </p>
+        <p style="margin:5px">[26] Qianao Ju, <b><u>Geng Sun</u></b>, Hongsheng Li, Ying Zhang. Collaborative in-network processing for internet of battery-less things, <i>IEEE Internet of Things Journal</i>, 6(3): 5184-5195, 2019. </p>
 
-        <p style="margin:5px">[25] Boxiong Wang, Hui Kang, <b><u>Geng Sun*</u></b>, Jiahui Li. Efficient Traffic-based IoT Device Identification Using a Feature Selection Approach with Lévy Flight-based Sine Chaotic Sub-swarm Binary Honey Badger Algorithm, <i>Applied Soft Computing</i>, 2024. </p>
+        <p style="margin:5px">[27] Boxiong Wang, Hui Kang, <b><u>Geng Sun*</u></b>, Jiahui Li. Efficient Traffic-based IoT Device Identification Using a Feature Selection Approach with Lévy Flight-based Sine Chaotic Sub-swarm Binary Honey Badger Algorithm, <i>Applied Soft Computing</i>, 2024. </p>
 
-        <p style="margin:5px">[26] Jiahui Li, <b><u>Geng Sun*</u></b>, Aiming Wang, Xiaoya Zheng, Zhaoyu Chen, Shuang Liang, Yanheng Liu. Multi-objective Sparse Synthesis Optimization of Concentric Circular Antenna Array via Hybrid Evolutionary Computation Approach, <i>Expert Systems With Applications</i>, 2023. </p>
+        <p style="margin:5px">[28] Jiahui Li, <b><u>Geng Sun*</u></b>, Aiming Wang, Xiaoya Zheng, Zhaoyu Chen, Shuang Liang, Yanheng Liu. Multi-objective Sparse Synthesis Optimization of Concentric Circular Antenna Array via Hybrid Evolutionary Computation Approach, <i>Expert Systems With Applications</i>, 2023. </p>
 
-        <p style="margin:5px">[27] Kunpeng Zhang, Yanheng Liu, Xue Wang, Fang Mei, Hui Kang, <b><u>Geng Sun</u></b>. IBMRFO: Improved binary manta ray foraging optimization with chaotic tent map and adaptive somersault factor for feature selection, <i>Expert Systems With Applications</i>, 2024. </p>
+        <p style="margin:5px">[29] Kunpeng Zhang, Yanheng Liu, Xue Wang, Fang Mei*, Hui Kang, <b><u>Geng Sun</u></b>. IBMRFO: Improved binary manta ray foraging optimization with chaotic tent map and adaptive somersault factor for feature selection, <i>Expert Systems With Applications</i>, 2024. </p>
 
-        <p style="margin:5px">[28] Lingling Liu, Aimin Wang <b><u>Geng Sun*</u></b>, Jiahui Li. Maximizing Data Gathering and Energy Efficiency in UAV-assisted IoT: A Multi-objective Optimization Approach, <i>Computer Networks</i>, 2023. </p>
+        <p style="margin:5px">[30] Kunpeng Zhang, Yanheng Liu, Xue Wang, Fang Mei, <b><u>Geng Sun</u></b>， Jindong Zhang. Enhancing IoT (Internet of Things) Feature Selection: A Two-Stage Approach via an Improved Whale Optimization Algorithm, <i>Expert Systems With Applications</i>, 2024. </p>
 
-        <p style="margin:5px">[29] Jiahui Li, <b><u>Geng Sun*</u></b>, Aiming Wang, Ming Lei, Shuang Liang, Hui Kang, Yanheng Liu. A Many-objective Optimization Charging Scheme for Wireless Rechargeable Sensor Networks via Mobile Charging Vehicles, <i>Computer Networks</i>, 215, 109196, 2022.</p>
+        <p style="margin:5px">[31] Lingling Liu, Aimin Wang <b><u>Geng Sun*</u></b>, Jiahui Li. Maximizing Data Gathering and Energy Efficiency in UAV-assisted IoT: A Multi-objective Optimization Approach, <i>Computer Networks</i>, 2023. </p>
 
-        <p style="margin:5px">[30] Jiahui Li, <b><u>Geng Sun*</u></b>, Shuang Liang, Yuxin Wang, Aimin Wang. Multi-Objective Uplink Data Transmission Optimization for Edge Computing in UAV-Assistant Mobile Wireless Sensor Networks, <i>Journal of Systems Architecture</i>, 132, 102744, 2022. </p>
+        <p style="margin:5px">[32] Jiahui Li, <b><u>Geng Sun*</u></b>, Aiming Wang, Ming Lei, Shuang Liang, Hui Kang, Yanheng Liu. A Many-objective Optimization Charging Scheme for Wireless Rechargeable Sensor Networks via Mobile Charging Vehicles, <i>Computer Networks</i>, 215, 109196, 2022. </p>
 
-        <p style="margin:5px">[31] Shuang Liang, Zhiyi Fang, <b><u>Geng Sun*</u></b>, Chi Lin, Jiahui Li, Songyang Li, Aimin Wang. Charging UAV Deployment for Improving Charging Performance of Wireless Rechargeable Sensor Networks via Joint Optimization Approach, <i>Computer Networks</i>, 201, 108573, 2021. </p>
+        <p style="margin:5px">[33] Jiahui Li, <b><u>Geng Sun*</u></b>, Shuang Liang, Yuxin Wang, Aimin Wang. Multi-Objective Uplink Data Transmission Optimization for Edge Computing in UAV-Assistant Mobile Wireless Sensor Networks, <i>Journal of Systems Architecture</i>, 132, 102744, 2022. </p>
 
-        <p style="margin:5px">[32] <b><u>Geng Sun</u></b>, Yanheng Liu, Ming Yang, Aimin Wang*, Shuang Liang, Ying Zhang*. Coverage Optimization for VLC in Smart Home Based on Improved Cuckoo Search Algorithm, <i>Computer Networks</i>, 116 (2017): 63-78. </p>
+        <p style="margin:5px">[34] Shuang Liang, Zhiyi Fang, <b><u>Geng Sun*</u></b>, Chi Lin, Jiahui Li, Songyang Li, Aimin Wang. Charging UAV Deployment for Improving Charging Performance of Wireless Rechargeable Sensor Networks via Joint Optimization Approach, <i>Computer Networks</i>, 201, 108573, 2021. </p>
 
-        <p style="margin:5px">[33] Shuang Liang, Zhiyi Fang, <b><u>Geng Sun*</u></b>, Jin Zhang. A Physical Layer Security Approach Based on Optical Beamforming for Indoor Visible Light Communication, <i>IEEE Communications Letters</i>, 24(10): 2109-2113, 2020. </p>
+        <p style="margin:5px">[35] <b><u>Geng Sun</u></b>, Yanheng Liu, Ming Yang, Aimin Wang*, Shuang Liang, Ying Zhang*. Coverage Optimization for VLC in Smart Home Based on Improved Cuckoo Search Algorithm, <i>Computer Networks</i>, 116 (2017): 63-78. </p>
 
-        <p style="margin:5px">[34] Shuang Liang, Zhiyi Fang, <b><u>Geng Sun*</u></b>, Guannan Qu. Biogeography-based Optimization with Adaptive Migration and Adaptive Mutation with Its Application in Sidelobe Reduction of Antenna Arrays, <i>Applied Soft Computing</i>, 2022. </p>
+        <p style="margin:5px">[36] Shuang Liang, Zhiyi Fang, <b><u>Geng Sun*</u></b>, Jin Zhang. A Physical Layer Security Approach Based on Optical Beamforming for Indoor Visible Light Communication, <i>IEEE Communications Letters</i>, 24(10): 2109-2113, 2020. </p>
 
-        <p style="margin:5px">[35] Zhao Liu, Aimin Wang, <b><u>Geng Sun*</u></b>, Jiahui Li, Haiming Bao, and Yanheng Liu. Hybrid Binary Bald Eagle Search Optimization for Feature Selection, <i>Intelligent Data Analysis</i>, 2023. </p>
+        <p style="margin:5px">[37] Shuang Liang, Zhiyi Fang, <b><u>Geng Sun*</u></b>, Guannan Qu. Biogeography-based Optimization with Adaptive Migration and Adaptive Mutation with Its Application in Sidelobe Reduction of Antenna Arrays, <i>Applied Soft Computing</i>, 2022. </p>
 
-        <p style="margin:5px">[36] Tingting Zheng, Yanheng Liu, <b><u>Geng Sun*</u></b>, Jing Zhang, Jiahui Li. Joint Optimization of SNR and Motion Energy Consumption for UAV-enabled Collaborative Beamforming, <i>Wireless Networks</i>, 2022.</p>
+        <p style="margin:5px">[38] Zhao Liu, Aimin Wang, <b><u>Geng Sun*</u></b>, Jiahui Li, Haiming Bao, and Yanheng Liu. Hybrid Binary Bald Eagle Search Optimization for Feature Selection, <i>Intelligent Data Analysis</i>, 2023. </p>
 
-        <p style="margin:5px">[37] Boyu Li, Yanheng Liu, Minghai Wang, <b><u>Geng Sun*</u></b>, Bin Li. Local Anatomy for Personalized Privacy Protection. <i>International Journal of Information and Computer Security</i>, Vol. 15, Nos. 2/3, 2021.</p>
+        <p style="margin:5px">[39] Tingting Zheng, Yanheng Liu, <b><u>Geng Sun*</u></b>, Jing Zhang, Jiahui Li. Joint Optimization of SNR and Motion Energy Consumption for UAV-enabled Collaborative Beamforming, <i>Wireless Networks</i>, 2022. </p>
 
-        <p style="margin:5px">[38] <b><u>Geng Sun</u></b>, Yanheng Liu, Han Li, Jionghui Li, Aimin Wang*, Ying Zhang*. Power-pattern Synthesis for Energy Beamforming of Wireless Power Transmission, <i>Neural Computing and Applications</i>, 30.7 (2018): 2327-2342.</p>
+        <p style="margin:5px">[40] Boyu Li, Yanheng Liu, Minghai Wang, <b><u>Geng Sun*</u></b>, Bin Li. Local Anatomy for Personalized Privacy Protection. <i>International Journal of Information and Computer Security</i>, Vol. 15, Nos. 2/3, 2021. </p>
 
-        <p style="margin:5px">[39] Shuang Liang, Zhiyi Fang, <b><u>Geng Sun*</u></b>, Yanheng Liu, Guannan Qu, Suhanya Jayaprakasam, Ying Zhang. A Joint Optimization Approach for Distributed Collaborative Beamforming in Mobile Wireless Sensor Networks, <i>Ad Hoc Networks</i>,
-            102216, 2020.</p>
+        <p style="margin:5px">[41] <b><u>Geng Sun</u></b>, Yanheng Liu, Han Li, Jionghui Li, Aimin Wang*, Ying Zhang*. Power-pattern Synthesis for Energy Beamforming of Wireless Power Transmission, <i>Neural Computing and Applications</i>, 30.7 (2018): 2327-2342. </p>
 
-        <p style="margin:5px">[40] <b><u>Geng Sun</u></b>, Yanheng Liu, Aimin Wang*, Jing Zhang, Xu Zhou. Node Selection Optimization for Collaborative Beamforming in Wireless Sensor Networks, <i>Ad Hoc Networks</i>, 2016.02, 37(2): 389-403.</p>
+        <p style="margin:5px">[42] Shuang Liang, Zhiyi Fang, <b><u>Geng Sun*</u></b>, Yanheng Liu, Guannan Qu, Suhanya Jayaprakasam, Ying Zhang. A Joint Optimization Approach for Distributed Collaborative Beamforming in Mobile Wireless Sensor Networks, <i>Ad Hoc Networks</i>,
+            102216, 2020. </p>
+
+        <p style="margin:5px">[43] <b><u>Geng Sun</u></b>, Yanheng Liu, Aimin Wang*, Jing Zhang, Xu Zhou. Node Selection Optimization for Collaborative Beamforming in Wireless Sensor Networks, <i>Ad Hoc Networks</i>, 2016.02, 37(2): 389-403. </p>
 
 
     </div>
@@ -320,6 +396,7 @@
     <li> Top 2% Scientists Released by Stanford University (2023)</li>
     <li> Chinese Institute of Electronics IoT Expert Committee Outstanding Journal Paper Award (2022-2023)</li>
     <li> ACM China Outstanding Doctoral Dissertation Award</li>
+<li> ACM China Rising Star Award (2023, Changchun Chapter)</li>
     </div>           
     <hr>
     
@@ -337,60 +414,79 @@
 
     <h3>Professional Services: </h3>
     <div style="text-align: justify;text-justify:inter-ideograph;">
-	(1) IEEE Senior Member<br> 
+
+    (1) IEEE Senior Member<br> 
 	(2) Senior Member of CCF<br> 
 	(3) Executive member of the Internet of Things Specialized Committee of the CCF<br> 
 	(4) Executive member of the Network and Data Communications Committee of the CCF<br>
 	(5) Member of the Internet of Things Youth Specialized Group of the Chinese Institute of Electronics (CIE)<br>
-	(6) Associate Editor, SN Computer Science<br>
-	(7) Lead Guest Editor, IEEE Internet of Things Journal (2024), Special Issue on "Integration of Generative AI and Internet of Things"
-	(8) Guest Editor, Wireless Communications and Mobile Computing on Special Issue "Emerging Advanced Data Offloading Technologies for Urban Internet of Things"<br>
-	(9) Guest Editor, Wireless Communications and Mobile Computing on Special Issue "Advanced Multimodal Sensing Information Fusion for Artificial Intelligence of Things"<br>
-	(10) Workshop Organizer, Empowering Wireless Communications and Networking with Generative AI-IEEE/CIC International Conference on Communications in China (ICCC), 7-9 August 2024, Hangzhou, China<br>
-	(11) Co-chair, The First International Workshop on Intelligent UAVs for Next-generation Networks (IUAVNet) in conjunction with the ICA3PP 2023<br>
-	(12) Organizer, "Generative Artificial Intelligence-empowered Networks: Optimization and Applications", Tutorial in IEEE/CIC International Conference on Communications in China (ICCC 2024), Hangzhou, China, 7–9 August 2024<br>
-	(13) ISCIT 2024, Publicity Chair<br>
-	(14) IEEE WCNC 2023/2024, TPC Member<br>
-	(15) IEEE GLOBECOM 2022, TPC Member of "Workshop on Emerging Topics in 6G Communications"<br>
-	(16) IEEE GLOBECOM 2022, TPC Member of "Selected Areas in Communications: Aerial Communications"<br>
-	(17) IEEE GLOBECOM 2022, TPC Member of "Workshop on Cellular UAV and Satellite Communications"<br>
-	(18) IEEE ICC 2022, TPC Member<br>
-	(19) IEEE ICC 2022, TPC Member of "5th Workshop on Integrating UAVs into 5G and Beyond"<br>
-	(20) IEEE CLOUD 2021/2022/2024, TPC Member<br>
-	(21) IEEE GLOBECOM 2021, TPC Member of "Selected Areas in Communications: Aerial Communications"<br>
-	(22) IEEE MSN 2021, TPC Member of "3rd International Workshop on Edge Computing and Artificial Intelligence based Sensor-Cloud System (ECAISS)"<br>
-	(23) IEEE ICC 2021, TPC Member of "4th Workshop on Integrating UAVs into 5G and Beyond"<br>
-	(24) BIGCOM 2023/2022/2021, TPC Member<br>
-	(25) IEEE ICCC 2019, TPC Member<br>
-	(26) IEEE EDGE 2020/2021/2022/2023, TPC Member<br>
-	(27) Thematic Editor of the Journal "Computer Technology and Development"<br>
-	(28) Young Editor of the Journal "Data Acquisition and Processing"<br>
-	(29) Reviewer of high-level journals as follows: 
-	<br>
-	-IEEE Transactions on Mobile Computing<br>
-	-IEEE Journal on Selected Areas in Communications<br>
-	-IEEE/ACM Transactions on Networking<br>
-	-IEEE Transactions on Communications<br>
-	-IEEE Transactions on Wireless Communications<br>
-	-IEEE Transactions on Intelligent Transportation Systems<br>
-	-IEEE Transactions on Vehicular Technology<br>
-	-IEEE Internet of Things Journal<br>
-	-IEEE Wireless Communications Magazine<br>
-	-IEEE Communications Letters<br>
-	-IEEE Wireless Communications Letters<br>
-	-IEEE Signal Processing Letters<br>
+(6) Executive Chairman of the 2022 Young Scientist Salon of Jilin Association for Science and Technology<br>
+(7) Special Editorial Board Member of the Journal of Computer Technology and Development<br>
+(8) Young Editorial Board Member of the Journal of Data Acquisition and Processing<br>
+    (9) Associate Editor, IET Communications (2024-)<br> 
+    (10) Associate Editor, IEEE Networking Letters (2024-)<br> 
+    (11) Associate Editor, Transactions on Emerging Telecommunications Technologies (2024-)<br> 
+    (12) Associate Editor, SN Computer Science (2023-)<br> 
+    (13) Lead Guest Editor, IEEE Internet of Things Journal (2024), Special Issue on "Integration of Generative AI and Internet of Things"<br> 
+    (14) Guest Editor, Wireless Communications and Mobile Computing (2022), Special Issue on "Emerging Advanced Data Offloading Technologies for Urban Internet of Things" <br> 
+    (15) Guest Editor, Wireless Communications and Mobile Computing (2022), Special Issue on "Advanced Multimodal Sensing Information Fusion for Artificial Intelligence of Things" <br> 
+    (16) Workshop Organizer, Empowering Wireless Communications and Networking with Generative AI-IEEE/CIC International Conference on Communications in China (ICCC), 7-9 August 2024, Hangzhou, China<br>
+    (17) Co-chair, The First International Workshop on Intelligent UAVs for Next-generation Networks (IUAVNet) in conjunction with the ICA3PP 2023<br> 
+    (18) Organizer, "Empowering Networks with GAI: Fundamentals, Methodologies, and Applications", Tutorial in IEEE Global Communications Conference (GLOBECOM 2024), Cape Town, South Africa, 8–12 December 2024<br> 
+    (19) Organizer, "Generative Artificial Intelligence-empowered Networks: Optimization and Applications", Tutorial in IEEE/CIC International Conference on Communications in China (ICCC 2024), Hangzhou, China, 7–9 August 2024<br> 
+    (20) 2024 6th International Conference on Electronics and Communication, Network and Computer Technology, Technical Program Chair<br> 
+    (21) 2024 IEEE International Conference on Metaverse (Metaverse 2024), Publicity Chair<br> 
+    (22) IEEE WCNC 2023/2024, TPC Member<br>
+    (23) IEEE GLOBECOM 2022, TPC Member of "Workshop on Emerging Topics in 6G Communications"<br>
+    (24) IEEE GLOBECOM 2022, TPC Member of "Selected Areas in Communications: Aerial Communications"<br> 
+    (25) IEEE GLOBECOM 2022, TPC Member of "Workshop on Cellular UAV and Satellite Communications"<br>
+    (26) IEEE ICC 2022, TPC Member<br> 
+    (27) IEEE ICC 2022, TPC Member of "5th Workshop on Integrating UAVs into 5G and Beyond"<br> 
+    (28) IEEE CLOUD 2021/2022/2024, TPC Member<br> 
+    (29) IEEE GLOBECOM 2021, TPC Member of "Selected Areas in Communications: Aerial Communications"<br> 
+    (30) IEEE MSN 2021, TPC Member of "3rd International Workshop on Edge Computing and Artificial Intelligence based Sensor-Cloud System (ECAISS)"<br> 
+    (31) IEEE ICC 2021, TPC Member of "4th Workshop on Integrating UAVs into 5G and Beyond"<br> 
+    (32) BIGCOM 2023/2022/2021, TPC Member<br> 
+    (33) IEEE ICCC 2019, TPC Member<br> 
+    (34) IEEE EDGE 2020/2021/2022/2023, TPC Member<br> 
+    (35) Reviewers:
+    <br> 
+    -IEEE Communications Surveys and Tutorials<br> 
+    -IEEE Transactions on Mobile Computing<br> 
+    -IEEE Journal on Selected Areas in Communications<br> 
+    -IEEE/ACM Transactions on Networking<br>  
+    -IEEE Transactions on Communications<br>    
+    -IEEE Transactions on Wireless Communications<br>  
+    -IEEE Transactions on Intelligent Transportation Systems<br>  
+    -IEEE Transactions on Vehicular Technology<br> 
+    -IEEE Transactions on Intelligent Vehicles<br> 
+    -IEEE Internet of Things Journal<br> 
+    -IEEE Wireless Communications Magazine<br> 
+    -IEEE Communications Letters<br> 
+    -IEEE Wireless Communications Letters<br> 
+    -IEEE Signal Processing Letters<br>
 	 </div>   
 	 <hr>
 
-    <h3>Research Group:</h3>
+     <h3>Research Group:</h3>
     <ul>
-        <li><b><font size="" color="blue">Postdocs: </font></b><br>Zemin Sun </li>
-        <li><b><font size="" color="blue">PhD Students: </font></b><br>Jiahui Li, Chuang Zhang, Saichao Liu, Long He.</li>
-        <li><b><font size="" color="blue">Master Students (College of Computer Science and Technology):</font></b><br>Xiaoya Zheng, Jiayun Zhang, Jian Xiao, Wenwen Xie, Bei Liu, Chenbang Liu, Yixian Wang, Likun Zhang.</li>
-        <li><b><font size="" color="blue">Master Students (College of Software):</font></b><br>Weilong Ma, Minghua Yuan, Jiaxu Wu, Siyi Chen, Weihong Qin, Liqiang Yu. </li>
+        <li><b><font size="" color="blue">Postdocs: </font></b><br>Zemin Sun, Jiahui Li. </li>
+
+        <li><b><font size="" color="blue">PhD Students: </font>
+	</b><br>2021: Jiahui Li, Chuang Zhang
+	</b><br>2022: Saichao Liu 
+	</b><br>2023: Long He 
+	</b><br>2024: Xiaoya Zheng.</li>
+
+        <li><b><font size="" color="blue">Master Students :</font>
+	</b><br>2021: Long He, Xiaoya Zheng, Jiayun Zhang
+	</b><br>2022: Jian Xiao, Wenwen Xie, Bei Liu, Weilong Ma, Minghua Yuan, Jiaxu Wu
+ 	</b><br>2023: Chenbang Liu, Yixian Wang, Likun Zhang, Siyi Chen, Weihong Qin, Liqiang Yu. 
+	</b><br>2024: Mingzhe Fan, Jia Qi, Lei Xie, Ying Wang, Yaxin Xing, Shengjie Xue, Xiaoqing Luo. </li>
     </ul>
 
     <hr>
+
 
     <h3>Recruitment Information:</h3>
 
@@ -399,7 +495,7 @@
     (3) Recruitment of Postdoctoral Fellows. <br>
     <hr>
 
-    <em>Last Updated: 2024-4-10</em><br>
+    <em>Last Updated: 2024-8-1</em><br>
 
     <hr>
 
